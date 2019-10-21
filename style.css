@@ -1,0 +1,63 @@
+body{font-family: neue-haas-grotesk-display,sans-serif;
+font-weight: 500;
+    font-style: normal}
+h1{font-weight:500;
+    font-size:17px;
+}
+/*.hidden {
+    display: none;
+}
+
+.name{font-size: 40px}
+
+.row {
+    border-top: 1.5px solid black;
+    padding: 2px;
+    height: 50px;
+
+}
+
+.row-heading {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.image-container {
+    display: flex;
+}
+
+button {
+    background-color: white;
+    border: none;
+    font-size: 13px;
+}*/
+
+.Unten{padding-top:30px;}
+
+.name{font-size: 40px}
+
+.hidden {
+    display: none;
+}
+
+.row {
+    border-top: 1.5px solid black;
+    padding: 0px;
+    padding-left: 30px;
+}
+
+.row-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container {
+    display: flex;
+}
+
+button {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+}

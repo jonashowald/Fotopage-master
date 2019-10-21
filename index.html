@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxu0tlg.css">
+    <script>
+        function showImage(rowNumber) { 
+            let imageContainerId = 'image-container-' + rowNumber;
+            let buttonId = 'button-' + rowNumber;
+            let imageRowClasses = document.getElementById(imageContainerId).classList;
+            if (imageRowClasses.contains("hidden")) {
+                imageRowClasses.remove("hidden");
+                imageRowClasses.add("image-container");
+                document.getElementById(buttonId).innerHTML = "↑"; 
+            } else {
+                imageRowClasses.remove("image-container");
+                imageRowClasses.add("hidden");
+                document.getElementById(buttonId).innerHTML = "↓";
+            }
+                
+        }    
+    </script>
+</head>
+<body>
+    <div class="name">Jonas Howald</div>
+       <div class="Unten">
+       <div class="row"> 
+        <div class="row-heading">
+            <h1>Typoclub Plakate</h1>
+            <button id="button-1" onclick="showImage('1')">↓</button>
+        </div>
+        <div id="image-container-1" class="hidden"> 
+            <img src="./img/TypoclubPlakate/TypoclubPlakate1.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        <div id="image-container-1" class="hidden"> 
+            <img src="./img/TypoclubPlakate/TypoclubPlakate2.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+    </div>
+
+    <div class="row"> 
+        <div class="row-heading">
+            <h1>Hairvorragend</h1>
+            <button id="button-2" onclick="showImage('2')">↓</button>
+        </div>
+        <div id="image-container-2" class="hidden"> 
+            <img src="./img/Hairvorragend/Hairvorragend.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        <div id="image-container-2" class="hidden"> 
+            <img src="./img/Hairvorragend/Hairvorragend2.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+    </div>
+
+    <div class="row"> 
+        <div class="row-heading">
+            <h1>Foodwaste</h1>
+            <button id="button-3" onclick="showImage('3')">↓</button>
+        </div>
+        <div id="image-container-3" class="hidden"> 
+            <img src="./img/Foodwaste/foodwaste1.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        <div id="image-container-3" class="hidden"> 
+            <img src="./img/Foodwaste/foodwaste2.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        </div>
+
+    <div class="row"> 
+        <div class="row-heading">
+            <h1>Ordnung</h1>
+            <button id="button-4" onclick="showImage('4')">↓</button>
+        </div>
+        <div id="image-container-4" class="hidden"> 
+            <img src="./img/Foodwaste/foodwaste1.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        <div id="image-container-4" class="hidden"> 
+            <img src="./img/Foodwaste/foodwaste2.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        </div>
+
+    <div class="row"> 
+        <div class="row-heading">
+            <h1>Traumwelten</h1>
+            <button id="button-5" onclick="showImage('5')">↓</button>
+        </div>
+        <div id="image-container-5" class="hidden"> 
+            <img src="./img/Traumwelten/Traumwelten1.png" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        <div id="image-container-5" class="hidden"> 
+            <img src="./img/Traumwelten/Traumwelten2.png" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        <div id="image-container-5" class="hidden"> 
+            <img src="./img/Traumwelten/Traumwelten3.png" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+
+     
+     
+     </div>   
+     
+     <div class="row"> 
+        <div class="row-heading">
+            <h1>Fotografie Analog</h1>
+            <button id="button-6" onclick="showImage('6')">↓</button>
+        </div>
+        <div id="image-container-6" class="hidden"> 
+            <img src="./img/AnalogeFotografieFarbig/analogfarbig1.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        <div id="image-container-6" class="hidden"> 
+            <img src="./img/AnalogeFotografieFarbig/analogfarbig2.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        <div id="image-container-6" class="hidden"> 
+            <img src="./img/AnalogeFotografieFarbig/analogfarbig3.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+           <div id="image-container-6" class="hidden"> 
+            <img src="./img/AnalogeFotografieFarbig/analogfarbig4.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        </div>
+
+  
+    <div class="row"> 
+        <div class="row-heading">
+            <h1>Aphex Twin Cover</h1>
+            <button id="button-7" onclick="showImage('7')">↓</button>
+        </div>
+        <div id="image-container-7" class="hidden"> 
+            <img src="./img/AphexTwinCover/aphextwin1.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+        <div id="image-container-7" class="hidden"> 
+            <img src="./img/AphexTwinCover/aphextwin2.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+            </div>
+            
+            </div>
+
+  
+    <div class="row"> 
+        <div class="row-heading">
+            <h1>Diverse Typoplakate</h1>
+            <button id="button-8" onclick="showImage('8')">↓</button>
+        </div>
+        <div id="image-container-8" class="hidden"> 
+            <img src="./img/Diverse_Typoplakate/Rhythmus.jpg" alt="something"/>
+            <p>Lorem ipsum</p>
+        </div>
+        
+    
+       
+       
+    
+     
+     
+     
+     </div>   
+    </div>
+
+
+</body>    
