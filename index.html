@@ -6,19 +6,30 @@
     <link rel="stylesheet" href="https://use.typekit.net/sxu0tlg.css">
     <script>
         function showImage(rowNumber) { 
-            let imageContainerId = 'image-container-' + rowNumber;
+            let imageContainerId = 'element-' + rowNumber;
             let buttonId = 'button-' + rowNumber;
             let imageRowClasses = document.getElementById(imageContainerId).classList;
             if (imageRowClasses.contains("hidden")) {
+                closeAllByClassName("element");
                 imageRowClasses.remove("hidden");
-                imageRowClasses.add("image-container");
+                imageRowClasses.add("element");
                 document.getElementById(buttonId).innerHTML = "↑"; 
             } else {
-                imageRowClasses.remove("image-container");
+                imageRowClasses.remove("element");
                 imageRowClasses.add("hidden");
                 document.getElementById(buttonId).innerHTML = "↓";
             }
                 
+        }
+
+        function closeAllByClassName(className){
+            let x = document.getElementsByClassName(className);
+            console.log(x);
+            for (let i = 0; i < x.length; i++) {
+                x[i].classList.remove(className);
+                x[i].classList.add("hidden");
+                console.log(x[i]);
+            } 
         }    
     </script>
 </head>
@@ -30,7 +41,7 @@
                 <h1>Typoclub Plakate</h1>
                 <button id="button-1" onclick="showImage('1')">↓</button>
             </div>
-            <div id="image-container-1" class="hidden"> 
+            <div id="element-1" class="hidden"> 
                 <img src="./img/TypoclubPlakate/TypoclubPlakate1.jpg" alt="something"/>
                 
                 <img src="./img/TypoclubPlakate/TypoclubPlakate2.jpg" alt="something"/>
@@ -42,7 +53,7 @@
                 <h1>Hairvorragend</h1>
                 <button id="button-2" onclick="showImage('2')">↓</button>
             </div>
-            <div id="image-container-2" class="hidden"> 
+            <div id="element-2" class="hidden"> 
                 <img src="./img/Hairvorragend/Hairvorragend.jpg" alt="something"/>
                 
                 <img src="./img/Hairvorragend/Hairvorragend2.jpg" alt="something"/>
@@ -54,7 +65,7 @@
                 <h1>Foodwaste</h1>
                 <button id="button-3" onclick="showImage('3')">↓</button>
             </div>
-            <div id="image-container-3" class="hidden"> 
+            <div id="element-3" class="hidden"> 
                 <img src="./img/Foodwaste/foodwaste1.jpg" alt="something"/>
                 
                 <img src="./img/Foodwaste/foodwaste2.jpg" alt="something"/>
@@ -66,7 +77,7 @@
                 <h1>Ordnung</h1>
                 <button id="button-4" onclick="showImage('4')">↓</button>
             </div>
-            <div id="image-container-4" class="hidden"> 
+            <div id="element-4" class="hidden"> 
                 <img src="./img/Foodwaste/foodwaste1.jpg" alt="something"/>
                 
                 <img src="./img/Foodwaste/foodwaste2.jpg" alt="something"/>
@@ -78,7 +89,7 @@
                 <h1>Traumwelten</h1>
                 <button id="button-5" onclick="showImage('5')">↓</button>
             </div>
-            <div id="image-container-5" class="hidden"> 
+            <div id="element-5" class="hidden"> 
                 <img src="./img/Traumwelten/Traumwelten1.png" alt="something"/>
 
                 <img src="./img/Traumwelten/Traumwelten2.png" alt="something"/>
@@ -92,7 +103,7 @@
                 <h1>Fotografie Analog</h1>
                 <button id="button-6" onclick="showImage('6')">↓</button>
             </div>
-            <div id="image-container-6" class="hidden"> 
+            <div id="element-6" class="hidden"> 
                 <img src="./img/AnalogeFotografieFarbig/analogfarbig1.jpg" alt="something"/>
                 
                 <img src="./img/AnalogeFotografieFarbig/analogfarbig2.jpg" alt="something"/>
@@ -109,7 +120,7 @@
                 <h1>Aphex Twin Cover</h1>
                 <button id="button-7" onclick="showImage('7')">↓</button>
             </div>
-            <div id="image-container-7" class="hidden"> 
+            <div id="element-7" class="hidden"> 
                 <img src="./img/AphexTwinCover/aphextwin1.jpg" alt="something"/>
 
                 <img src="./img/AphexTwinCover/aphextwin2.jpg" alt="something"/>
@@ -122,7 +133,7 @@
                 <h1>Diverse Typoplakate</h1>
                 <button id="button-8" onclick="showImage('8')">↓</button>
             </div>
-            <div id="image-container-8" class="hidden"> 
+            <div id="element-8" class="hidden"> 
                 <img src="./img/Diverse_Typoplakate/Rhythmus.jpg" alt="something"/>
                 <p>Lorem ipsum</p>
             </div>
