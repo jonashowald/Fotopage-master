@@ -13,7 +13,6 @@
                 closeAllByClassName("element");
                 imageRowClasses.add("element");
                 imageRowClasses.remove("hidden");
-                //Class list apparently needs to be reloaded after editing it.
                 document.getElementById(buttonId).innerHTML = "↑"; 
             } else {
                 imageRowClasses.remove("element");
@@ -37,9 +36,9 @@
     <div class="name">Jonas Howald</div>
     <div class="Unten">
         <div class="row"> 
-            <div class="row-heading">
+            <div class="row-heading" onclick="showImage('1')">
                 <h1>Typoclub Plakate</h1>
-                <button id="button-1" onclick="showImage('1')">↓</button>
+                <button id="button-1">↓</button>
             </div>
             <div id="element-1" class="hidden"> 
                 <img src="./img/TypoclubPlakate/TypoclubPlakate1.jpg" alt="something"/>
@@ -49,9 +48,9 @@
         </div>
 
         <div class="row"> 
-            <div class="row-heading">
+            <div class="row-heading" onclick="showImage('2')">
                 <h1>Hairvorragend</h1>
-                <button id="button-2" onclick="showImage('2')">↓</button>
+                <button id="button-2">↓</button>
             </div>
             <div id="element-2" class="hidden"> 
                 <div class="image-container">
@@ -64,9 +63,9 @@
         </div>
 
         <div class="row"> 
-            <div class="row-heading">
+            <div class="row-heading" onclick="showImage('3')">
                 <h1>Foodwaste</h1>
-                <button id="button-3" onclick="showImage('3')">↓</button>
+                <button id="button-3">↓</button>
             </div>
             <div id="element-3" class="hidden"> 
                 <div class="image-container">
@@ -79,9 +78,9 @@
         </div>
 
         <div class="row"> 
-            <div class="row-heading">
+            <div class="row-heading" onclick="showImage('4')">
                 <h1>Ordnung</h1>
-                <button id="button-4" onclick="showImage('4')">↓</button>
+                <button id="button-4">↓</button>
             </div>
             <div id="element-4" class="hidden"> 
                 <div class="image-container">
@@ -94,9 +93,9 @@
         </div>
 
         <div class="row"> 
-            <div class="row-heading">
+            <div class="row-heading" onclick="showImage('5')">
                 <h1>Traumwelten</h1>
-                <button id="button-5" onclick="showImage('5')">↓</button>
+                <button id="button-5">↓</button>
             </div>
             <div id="element-5" class="hidden">
                 <div class="image-container"> 
@@ -112,9 +111,9 @@
         </div>   
         
         <div class="row"> 
-            <div class="row-heading">
+            <div class="row-heading" onclick="showImage('6')">
                 <h1>Fotografie Analog</h1>
-                <button id="button-6" onclick="showImage('6')">↓</button>
+                <button id="button-6">↓</button>
             </div>
             <div id="element-6" class="hidden">
                 <div class="image-container"> 
@@ -134,9 +133,9 @@
 
     
         <div class="row"> 
-            <div class="row-heading">
+            <div class="row-heading" onclick="showImage('7')">
                 <h1>Aphex Twin Cover</h1>
-                <button id="button-7" onclick="showImage('7')">↓</button>
+                <button id="button-7">↓</button>
             </div>
             <div id="element-7" class="hidden"> 
                 <div class="image-container">
@@ -150,9 +149,9 @@
 
     
         <div class="row"> 
-            <div class="row-heading">
+            <div class="row-heading" onclick="showImage('8')">
                 <h1>Diverse Typoplakate</h1>
-                <button id="button-8" onclick="showImage('8')">↓</button>
+                <button id="button-8">↓</button>
             </div>
             <div id="element-8" class="hidden"> 
                 <div class="image-container">
